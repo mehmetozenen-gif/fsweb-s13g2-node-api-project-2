@@ -7,9 +7,9 @@
     "test": "cross-env NODE_ENV=testing jest --verbose --runInBand --silent",
     "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run",
     "sendresults": "node sendTestResults.js"
-
   },
   "dependencies": {
+    "express": "^4.18.2",
     "knex": "^2.0.0",
     "sqlite3": "^5.0.8"
   },
